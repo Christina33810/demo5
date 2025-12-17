@@ -47,7 +47,7 @@ col3, col4 = st.columns(2)
 # Bar Chart - Sales by Product
 with col3:
     st.markdown("### Sales by Product")
-    sales_by_product = df_selected.groupby('product_name')['sales'].sum()
+    sales_by_product = df_sorted.groupby('product_name')['sales'].sum()
     st.bar_chart(sales_by_product)
 
 # Scatter Chart - Customer Engagement by Product
