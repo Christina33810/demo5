@@ -7,7 +7,7 @@ import streamlit as st
 import pandas as pd
 
 # Step 3: Load Superstore Dataset
-df = pd.read_csv('superstore_dataset.csv')
+df = pd.read_csv('uperstore_dataset.csv')
 
 # Step 4: Convert 'order_date' to datetime
 df['order_date'] = pd.to_datetime(df['order_date'])  # Convert to datetime if not already
